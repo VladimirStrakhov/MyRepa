@@ -116,7 +116,7 @@
         <input type="text" placeholder="ФИО" id="user_name">
         <input type="text" placeholder="email" id="user_name">
         <input type="text" placeholder="Телефон" id="user_name">
-        <button id="order">Подать заявку</button>
+        <button id="zay_iwh">Подать заявку</button>
     </form>
     <form id="forminh">
         <h1>Мне нужна помощь</h1>
@@ -125,14 +125,15 @@
         <input type="text" placeholder="ФИО" id="user_name">
         <input type="text" placeholder="email" id="user_name">
         <input type="text" placeholder="Телефон" id="user_name">
-        <button id="order">Подать заявку о помощи</button>
+        <button id="zay_inh">Подать заявку о помощи</button>
     </form>
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
     <script>
         let tg = window.Telegram.WebApp;
         let iwh = document.getElementById("iwh");
         let inh = document.getElementById("inh");
-        let order = document.getElementById("order");
+        let zay_iwh = document.getElementById("zay_iwh");
+        let zay_inwh = document.getElementById("zay_inh");
         tg.expand();
 
         iwh.addEventListener("click", () => {
