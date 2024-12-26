@@ -22,7 +22,7 @@
         }
 
         #main {
-            margin-top: 20px;
+            margin-top: 10px;
             width: 100%;
             padding: 20px;
             text-align: center;
@@ -60,7 +60,7 @@
             background: var(--tg-theme-secondary-bg-color);
         }
 
-        #formihh {
+        #formiwh {
             display: none;
             text-align: center;
         }
@@ -106,10 +106,10 @@
         <img src="https://vladimirstrakhov.github.io/dobdar/main.png">
         <p>Этот бот создан для тех, кто хочет делать добро и для тех кому оно необходимо... <p>
         <p>Здесь никто никому деньги не дает и никто не у кого деньги не просит...  </p>
-        <button id="ihh">Я хочу помочь</button>
+        <button id="iwh">Я хочу помочь</button>
         <button id="inh">Мне нужна помощь</button>
     </div>
-    <form id="formihh">
+    <form id="formiwh">
         <h1>Хочу помочь</h1>
         <p>Здесь вы можете посмотреть на список тех, кому нужна помощь,<p>
         <p>а также сами оставить свою заявку на возможность помочь... </p>
@@ -125,19 +125,19 @@
         <input type="text" placeholder="ФИО" id="user_name">
         <input type="text" placeholder="email" id="user_name">
         <input type="text" placeholder="Телефон" id="user_name">
-        <button id="order">Подать заявку</button>
+        <button id="order">Подать заявку о помощи</button>
     </form>
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        let ihh = document.getElementById("ihh");
+        let iwh = document.getElementById("iwh");
         let inh = document.getElementById("inh");
         let order = document.getElementById("order");
         tg.expand();
 
         ihh.addEventListener("click", () => {
             document.getElementById("main").style.display = "none";
-            document.getElementById("formihh").style.display = "block";
+            document.getElementById("formiwh").style.display = "block";
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + "  " + tg.initDataUnsafe.user.last_name;
         });
 
