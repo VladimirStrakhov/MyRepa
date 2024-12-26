@@ -119,7 +119,7 @@
         <button id="order">Подать заявку</button>
     </form>
     <form id="forminh">
-        <h1>Нужна помощь</h1>
+        <h1>Мне нужна помощь</h1>
         <p>Здесь вы можете посмотреть на список тех, кто может вам помочь,<p>
         <p>а также сами оставить свою заявку на необходимость помощи... </p>
         <input type="text" placeholder="ФИО" id="user_name">
@@ -135,7 +135,7 @@
         let order = document.getElementById("order");
         tg.expand();
 
-        ihh.addEventListener("click", () => {
+        iwh.addEventListener("click", () => {
             document.getElementById("main").style.display = "none";
             document.getElementById("formiwh").style.display = "block";
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + "  " + tg.initDataUnsafe.user.last_name;
