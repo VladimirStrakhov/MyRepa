@@ -59,7 +59,7 @@
             background: var(--tg-theme-secondary-bg-color);
         }
 
-        #form {
+        #formihh {
             display: none;
             text-align: center;
         }
@@ -88,7 +88,9 @@
         <button id="ihh">Я хочу помочь</button>
         <button id="inh">Мне нужна помощь</button>
     </div>
-    <form id="form">
+    <form id="formihh">
+        <p>Здесь вы можете посмотреть на список тех, кому нужна помощь,<p>
+        <p>а также сами оставить свою заявку на возможность помочь... </p>
         <input type="text" placeholder="ФИО" id="user_name">
         <input type="text" placeholder="email" id="user_name">
         <input type="text" placeholder="Телефон" id="user_name">
@@ -104,7 +106,13 @@
 
         ihh.addEventListener("click", () => {
             document.getElementById("main").style.display = "none";
-            document.getElementById("form").style.display = "block";
+            document.getElementById("formhh").style.display = "block";
+            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + "  " + tg.initDataUnsafe.user.last_name;
+        });
+
+        inh.addEventListener("click", () => {
+            document.getElementById("main").style.display = "none";
+            document.getElementById("formnh").style.display = "block";
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + "  " + tg.initDataUnsafe.user.last_name;
         });
 
